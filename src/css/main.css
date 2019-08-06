@@ -161,7 +161,7 @@ line:nth-child(3n) {
         height: 60vh;
     }
     .front {
-        top: 40vh;
+        top: 44vh;
         height: 60vh;
     }
     .front {
@@ -171,6 +171,15 @@ line:nth-child(3n) {
     h1 {
         font-size: 36px;
         font-weight: 700 !important;
+        line-height: 1;
+    }
+    .front h1 {
+        position: absolute;
+        top: 92px;
+    }
+    .back h1 {
+        position: absolute;
+        bottom: 92px;
     }
 }
 
