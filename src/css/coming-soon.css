@@ -88,13 +88,13 @@ main {
     left: 30%;
     display: block;
     width: 230px;
-    height: 350px;
+    height: 300px;
     background: rgb(8, 151, 161);
     background: linear-gradient(0deg, rgba(8, 151, 161, 1) 0%, rgba(74, 180, 163, 1) 100%);
 }
 
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
@@ -110,6 +110,8 @@ footer {
 
 .blue-bg:hover {
     z-index: 4;
+    transition-delay: 300ms;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .yellow-bg {
@@ -120,7 +122,7 @@ footer {
     right: 30%;
     display: block;
     width: 230px;
-    height: 350px;
+    height: 300px;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     background: rgb(255, 213, 0);
     background: linear-gradient(180deg, rgba(255, 213, 0, 1) 0%, rgba(186, 105, 15, 1) 100%);
@@ -133,8 +135,8 @@ footer {
     top: 60%;
     left: 50%;
     z-index: 6;
-    width: 250px;
-    height: 350px;
+    width: 230px;
+    height: 316px;
     background: transparent;
     border: 8px solid white;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
@@ -148,7 +150,7 @@ footer {
 
 a {
     color: #0897A1;
-    transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 i {
@@ -159,11 +161,15 @@ a:hover {
     text-decoration: none;
     color: #BA690F;
     transition-delay: 300ms;
-    transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .contact {
-    position: relative;
-    top: 16px;
+    position: absolute;
+    right: 0;
     min-height: 40px;
+}
+
+header {
+    padding-top: 16px;
 }
