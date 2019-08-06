@@ -37,7 +37,7 @@ body {
     font-family: 'Interstate-RegularComp';
     width: 100vw;
     height: 100vh;
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 #ui-tag {
@@ -54,6 +54,10 @@ body {
 
 .card {
     border-color: transparent;
+}
+
+main {
+    height: 64vh;
 }
 
 .light-cond {
@@ -76,19 +80,6 @@ body {
     font-family: 'RegularComp', sans-serif;
 }
 
-footer {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 24px;
-    margin: auto;
-    text-align: center;
-}
-
-main {
-    height: 70vh;
-}
-
 .blue-bg {
     border-radius: 4px;
     position: absolute;
@@ -100,6 +91,11 @@ main {
     height: 350px;
     background: rgb(8, 151, 161);
     background: linear-gradient(0deg, rgba(8, 151, 161, 1) 0%, rgba(74, 180, 163, 1) 100%);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
 }
 
 .card-text {
