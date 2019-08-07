@@ -40,6 +40,10 @@ body {
     overflow: hidden;
 }
 
+.wrapper {
+    width: 100vw;
+}
+
 #ui-tag {
     margin-left: 48px;
 }
@@ -57,6 +61,8 @@ body {
 }
 
 main {
+    position: relative;
+    width: 100%;
     height: 64vh;
 }
 
@@ -84,11 +90,11 @@ main {
     border-radius: 4px;
     position: absolute;
     overflow: hidden;
-    top: 25%;
+    top: 20px;
     left: 30%;
     display: block;
     width: 230px;
-    height: 300px;
+    height: 312px;
     background: rgb(8, 151, 161);
     background: linear-gradient(0deg, rgba(8, 151, 161, 1) 0%, rgba(74, 180, 163, 1) 100%);
 }
@@ -109,34 +115,37 @@ footer {
 }
 
 .blue-bg:hover {
+    cursor: pointer;
     z-index: 4;
     transition-delay: 300ms;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .yellow-bg {
+    cursor: pointer;
     overflow: hidden;
     border-radius: 4px;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     right: 30%;
     display: block;
     width: 230px;
-    height: 300px;
+    height: 312px;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     background: rgb(255, 213, 0);
     background: linear-gradient(180deg, rgba(255, 213, 0, 1) 0%, rgba(186, 105, 15, 1) 100%);
 }
 
 .square {
+    cursor: pointer;
     display: block;
     position: absolute;
     transform: translate(-50%, -60%);
-    top: 60%;
+    top: 62%;
     left: 50%;
     z-index: 6;
     width: 230px;
-    height: 316px;
+    height: 325px;
     background: transparent;
     border: 8px solid white;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
@@ -171,5 +180,7 @@ a:hover {
 }
 
 header {
+    position: relative;
+    width: 100%;
     padding-top: 16px;
 }
